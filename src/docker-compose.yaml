@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  node: 
+    image: adnsoa/conversao-temperatura:v1
+    container_name: conversao-temperatura
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - 8080:8080
